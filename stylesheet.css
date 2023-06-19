@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    display: flex;
+    background-color: darkgrey;
+    background-size: cover;
+    justify-content: center;
+}
+
+#logo {
+    justify-content: flex-start;
+}
+
+main {
+    background-color: whitesmoke;
+}
