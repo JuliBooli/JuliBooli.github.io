@@ -1,19 +1,16 @@
-import logo from './logo.svg';
+import logo from './img/img.png';
 import './App.css';
+import Home from "./components/Home";
 
 function App() {
-  return (
-    <div className="App">
-
-      <header className="App-header">
-        <h1>HELLO</h1>
-        <img src={logo} className="App-logo" alt="logo"/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className={"App-header"}>
+                <Home/>
+                <img src={logo} className="App-logo" alt="logo"/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
