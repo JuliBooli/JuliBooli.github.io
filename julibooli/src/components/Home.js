@@ -1,11 +1,13 @@
+import {Link} from "react-router-dom";
+import img from '../img/img.png';
 
-
-function home() {
-
+function Home() {
     return (
-        <>
-            <h1>Very Epic App</h1>
-        </>
-    )
+        <div className={"App-header"}>
+            <h1>Home</h1>
+            <img class={"App-logo"} src={img}/>
+        </div>
+    );
 }
-export default  home;
+
+export default Home;
