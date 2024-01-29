@@ -1,9 +1,11 @@
-
-
 function Features() {
 
     return (
-            <h1>Very Epic App</h1>
+        <>
+            <h1>Features</h1>
+        </>
+
     )
 }
-export default  Features;
+
+export default Features;
