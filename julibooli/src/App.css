@@ -33,6 +33,16 @@ body {
   }
 }
 
-.App-link {
-  color: #61dafb;
+html{
+  background-color: #353841;
+}
+
+.NavLink{
+  text-decoration: none;
+  padding: 2rem;
+  color: #3cff05;
+}
+
+.NavLink:hover {
+  color: #27ffe1;
 }
