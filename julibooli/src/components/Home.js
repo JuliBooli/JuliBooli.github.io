@@ -1,10 +1,12 @@
-import img from '../img/img.png';
+import profilePicture from '../img/profilePicture.png';
 
 function Home() {
     return (
         <>
-            <h1>Home</h1>
-            <img className={"App-logo"} src={img} alt={"Spinning Martin"}/>
+            <h1>Welcome on my Website</h1>
+            <div>
+                <img className={"App-logo"} src={profilePicture} alt={"JuliBooli Profile Picture"}/>
+            </div>
         </>
     );
 }
