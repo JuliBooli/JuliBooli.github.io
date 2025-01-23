@@ -1,4 +1,3 @@
-import profilePicture from '../img/profilePicture.png';
 import React, { useState, useEffect } from "react";
 
 function Home() {
@@ -34,7 +33,7 @@ function Home() {
         <>
             <h1>Welcome on my Website</h1>
             <div>
-                <img className={"App-logo"} src={profilePicture} alt={"JuliBooli Profile Picture"} style={styles[styleIndex]} />
+                <img className={"App-logo"} src={"https://avatars.githubusercontent.com/u/118832930?s=400&v=4"} alt={"JuliBooli Profile Picture"} style={styles[styleIndex]} />
             </div>
         </>
     );

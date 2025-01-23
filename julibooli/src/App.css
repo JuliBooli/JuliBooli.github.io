@@ -3,6 +3,33 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+img{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 300ms ease;
+}
+
+.nav{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #717880;
+    padding: 10px;
+}
+
 .navigationLink {
     text-decoration: none;
     padding: 2em;
@@ -13,6 +40,11 @@ body {
 
 .navigationLink:hover {
     filter: drop-shadow(0 0 2em rgba(7, 27, 224, 0.67));
+}
+
+.navigationLink.active {
+    color: #00ffa0;
+    font-weight: bold;
 }
 
 .App-logo {
@@ -31,9 +63,20 @@ body {
     }
 }
 
-.container {
-    padding: 10px;
-    display: flex;
-    justifyContent: center;
-    background: #717880;
+.smallLogo {
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms ease;
 }
+
+.smallLogo:hover {
+    border-color: rgba(124, 224, 255, 0.7);
+    transform: scale(1.1);
+}
+
+.smallLogo.active {
+    border-color: #00ffa0;
+    box-shadow: 0 0 1em rgba(0, 255, 160, 0.8);
+    transform: scale(1.1);
+}
+

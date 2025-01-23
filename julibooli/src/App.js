@@ -4,7 +4,6 @@ import {NavLink, Route, Routes} from 'react-router-dom';
 import Home from "./components/Home";
 import Features from "./components/Features";
 import Projects from "./components/Projects";
-import profilePicture from './img/profilePicture.png';
 
 function App() {
 
@@ -12,11 +11,10 @@ function App() {
         <>
             <header>
                 <Navbar bg="dark" variant="dark">
-                    <Nav variant="tabs" defaultActiveKey="/">
+                    <Nav variant="tabs" defaultActiveKey="/" className={"nav"}>
                         <Container className={"container"}>
                             <a href={'/'}>
-                                <img src={profilePicture} width="40" height="40" className="Small-logo" alt="Face Logo"
-                                     style={{padding: 20}}/>
+                                <img src={"https://avatars.githubusercontent.com/u/118832930?s=400&v=4"} width="40" height="40" className="smallLogo" alt="Face Logo"/>
                             </a>
                             <NavLink className={"navigationLink"} to={"/features"}>
                                 Features
