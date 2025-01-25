@@ -22,8 +22,9 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    three js
+                    Three JS
                 </a>
+                <a href={"https://julibooli.github.io/game-of-life"}>Check out Game of Life</a>
                 <div>
                     <h3>Game of Life</h3>
                     <img src="/assets/img.png" alt="Game of Life preview"/>
