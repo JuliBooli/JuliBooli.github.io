@@ -1,7 +1,7 @@
-import "./css/projects.css"
+import { Link } from 'react-router-dom';
+import './css/projects.css';
 
 function Projects() {
-
     return (
         <>
             <h1>Projects</h1>
@@ -25,7 +25,7 @@ function Projects() {
                 >
                     Three JS
                 </a>
-                <a href={"/projects/game-of-life"}>Check out Game of Life</a>
+                <Link to="/projects/game-of-life">Check out Game of Life</Link>
                 <div>
                     <h3>Game of Life</h3>
                     <img src="/assets/game-of-life.png" alt="Game of Life preview"/>
