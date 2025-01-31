@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import * as THREE from "https://cdn.skypack.dev/three@0.146.0";
+import * as THREE from 'three';
 import './css/game-of-life.css';
 
 const ThreeScene = () => {
