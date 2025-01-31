@@ -1,6 +1,7 @@
-import './css/projects.css';
+import "./css/projects.css"
 
 function Projects() {
+
     return (
         <>
             <h1>Projects</h1>
@@ -24,10 +25,10 @@ function Projects() {
                 >
                     Three JS
                 </a>
-                <a href={"https://julibooli.github.io/game-of-life"}>Check out Game of Life</a>
+                <a href={"/projects/game-of-life"}>Check out Game of Life</a>
                 <div>
                     <h3>Game of Life</h3>
-                    <img src="/assets/img.png" alt="Game of Life preview"/>
+                    <img src="/assets/game-of-life.png" alt="Game of Life preview"/>
                 </div>
             </div>
         </>
