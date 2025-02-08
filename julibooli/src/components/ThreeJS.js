@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from 'three';
 import './css/game-of-life.css';
 
+
 const ThreeScene = () => {
     const containerRef = useRef();
     const rendererRef = useRef(null);
@@ -262,11 +263,15 @@ const ThreeScene = () => {
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, []);
 
+    function reloadGameOfLife() {
+        window.location.reload()
+    }
+
     return (
         <div ref={containerRef} className="three-container">
             <button className="ui-button" id="colorButton" onClick={handleColorChange}>Change Color</button>
             <button className="ui-button" id="loopButton" onClick={toggleColorLoop}>{loopButtonText}</button>
-            <button className="ui-button" id="reloadButton" onClick={() => window.location.reload()}>Reload</button>
+            <button className="ui-button" id="reloadButton" onClick={reloadGameOfLife}  >Reload</button>
             <form action="/projects">
                 <input className="ui-button" id="homeButton" type="submit" value="Go back to Projects"/>
             </form>
